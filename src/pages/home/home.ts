@@ -11,4 +11,8 @@ export class HomePage {
 
   }
 
+  public clickButton() {
+    console.log('clicked')
+  }
+
 }
