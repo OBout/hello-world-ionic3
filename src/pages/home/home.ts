@@ -9,6 +9,7 @@ import { StorageProvider } from '../../providers/storage/storage'
 export class HomePage {
 
   private clickValue: number = 0;
+  public twoWayValue: number = 0;
 
   constructor(
     public navCtrl: NavController,
@@ -19,6 +20,7 @@ export class HomePage {
   public clickButton() {
     console.log('clicked')
     this.clickValue++
+    this.twoWayValue++
     this.storage.getNumberFromHome = this.clickValue
   }
 
