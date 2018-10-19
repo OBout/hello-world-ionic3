@@ -10,8 +10,18 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class StorageProvider {
 
+  private numberFromHome: number = 99
+
   constructor(public http: HttpClient) {
-    console.log('Hello StorageProvider Provider');
+    console.log('Hello StorageProvider Provider')
+  }
+
+  public get getNumberFromHome() {
+    return this.numberFromHome
+  }
+
+  public set getNumberFromHome(arg: number) {
+    this.numberFromHome = arg
   }
 
 }
