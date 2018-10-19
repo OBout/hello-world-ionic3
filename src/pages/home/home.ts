@@ -7,12 +7,19 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
+  private clickValue: number = 0;
+
   constructor(public navCtrl: NavController) {
 
   }
 
   public clickButton() {
     console.log('clicked')
+    this.clickValue++
+  }
+
+  public get showButton() {
+    return this.clickValue
   }
 
 }
