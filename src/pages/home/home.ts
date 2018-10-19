@@ -11,9 +11,4 @@ export class HomePage {
 
   }
 
-  public clickButton() {
-    // do stuff
-  }
-
-
 }
