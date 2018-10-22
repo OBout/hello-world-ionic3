@@ -1,7 +1,12 @@
 <ion-header>
   <ion-navbar>
+    <ion-buttons end>
+      <a ion-button icon-only (click)="toHome()">
+        <ion-icon name="home"></ion-icon>
+      </a>
+    </ion-buttons>
     <ion-title>
-      About
+      Number from home {{fromHome}}
     </ion-title>
   </ion-navbar>
 </ion-header>
